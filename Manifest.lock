@@ -1,19 +1,24 @@
 PODS:
   - AcknowList (2.0.3)
   - Alamofire (5.4.4)
-  - Bagel (1.4.0):
-    - CocoaAsyncSocket
+  - Bugly (2.5.91)
   - Cache (6.0.0)
-  - CocoaAsyncSocket (7.6.5)
+  - CryptoSwift (1.4.2)
   - DeviceKit (4.5.2)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (6.5.9)
   - KeychainAccess (4.2.2)
   - Kingfisher (7.1.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
-  - R.swift (6.0.0):
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - RAMAnimatedTabBarController (5.2.0)
@@ -44,17 +49,52 @@ PODS:
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - SnapKit (5.0.1)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
   - Then (2.7.0)
+  - Toast-Swift (5.0.1)
+  - Utils (0.1.0):
+    - Moya
+    - RxCocoa
+    - RxSwift
+    - SwifterSwift
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - AcknowList
-  - Bagel
+  - Bugly
   - Cache
+  - CryptoSwift
   - DeviceKit
+  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift
   - KeychainAccess
   - Kingfisher
   - Moya/RxSwift
+  - "NSObject+Rx"
   - R.swift
   - RAMAnimatedTabBarController
   - ReactorKit
@@ -65,19 +105,25 @@ DEPENDENCIES:
   - RxSwiftExt
   - RxTheme
   - SnapKit
+  - SwifterSwift
   - Then
+  - Toast-Swift
+  - Utils (from `Project/Component/Utils`)
 
 SPEC REPOS:
   trunk:
     - AcknowList
     - Alamofire
-    - Bagel
+    - Bugly
     - Cache
-    - CocoaAsyncSocket
+    - CryptoSwift
     - DeviceKit
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
     - KeychainAccess
     - Kingfisher
     - Moya
+    - "NSObject+Rx"
     - R.swift
     - R.swift.Library
     - RAMAnimatedTabBarController
@@ -90,20 +136,29 @@ SPEC REPOS:
     - RxSwiftExt
     - RxTheme
     - SnapKit
+    - SwifterSwift
     - Then
+    - Toast-Swift
     - WeakMapTable
+
+EXTERNAL SOURCES:
+  Utils:
+    :path: Project/Component/Utils
 
 SPEC CHECKSUMS:
   AcknowList: 6d4faca4c3e0173377fe5649e086d627cd60b003
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
-  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CryptoSwift: a532e74ed010f8c95f611d00b8bbae42e9fe7c17
   DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  R.swift: 5ec056f5ba2744de1c3f6deeb4882ae2630f6e63
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
   ReactorKit: a06dd2a5c9339287aedf3dc821cfab6347eca106
@@ -115,9 +170,12 @@ SPEC CHECKSUMS:
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  Utils: 7e7a2337bf6b8f120e00a74e9ed9e147565f1763
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: aa68f3817fd1107bc7b0b1219e13fc02eb405625
+PODFILE CHECKSUM: 52118658758eb863bfa86ee400f3e5f84cd747f8
 
 COCOAPODS: 1.11.2
