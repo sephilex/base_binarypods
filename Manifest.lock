@@ -31,6 +31,7 @@ PODS:
     - Toaster
   - Differentiator (5.0.0)
   - DZNEmptyDataSet (1.8.1)
+  - ESTabBarController-swift (2.8.0)
   - Eureka (5.3.5)
   - FirebaseABTesting (9.1.0):
     - FirebaseCore (~> 9.0)
@@ -274,7 +275,6 @@ PODS:
   - SwiftyFitsize (1.4.0):
     - DeviceKit
   - SwiftyImage (1.6.0)
-  - TestPod (0.1.0)
   - Then (2.7.0)
   - TinyConstraints (4.0.2)
   - Toaster (2.3.0)
@@ -289,8 +289,9 @@ DEPENDENCIES:
   - CompositionalLayoutDSL (~> 0.1.0)
   - CryptoSwift
   - DeviceKit
-  - DevKit (from `OtherPods/DevKit/`)
+  - DevKit (from `https://github.com/sephilex/DevKit.git`)
   - DZNEmptyDataSet
+  - ESTabBarController-swift
   - Eureka
   - FirebaseAnalytics
   - FirebaseCrashlytics
@@ -325,7 +326,6 @@ DEPENDENCIES:
   - SwiftMessages
   - SwiftyFitsize (from `https://github.com/sephilex-dev/SwiftyFitsize.git`)
   - SwiftyImage (~> 1.1)
-  - TestPod (from `OtherPods/TestPod/`)
   - Then
   - TinyConstraints
   - Toaster
@@ -342,6 +342,7 @@ SPEC REPOS:
     - DeviceKit
     - Differentiator
     - DZNEmptyDataSet
+    - ESTabBarController-swift
     - Eureka
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -394,7 +395,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   DevKit:
-    :path: OtherPods/DevKit/
+    :git: https://github.com/sephilex/DevKit.git
   Quick:
     :branch: bugfix_Xcode13.3
     :git: https://github.com/mimibuduo123/Quick.git
@@ -402,10 +403,11 @@ EXTERNAL SOURCES:
     :git: https://github.com/RxSwiftCommunity/RxKingfisher.git
   SwiftyFitsize:
     :git: https://github.com/sephilex-dev/SwiftyFitsize.git
-  TestPod:
-    :path: OtherPods/TestPod/
 
 CHECKOUT OPTIONS:
+  DevKit:
+    :commit: c48a96f3afaaab331d5db8949492475e74a3093b
+    :git: https://github.com/sephilex/DevKit.git
   Quick:
     :commit: 1604d4c62c2684915bb516b2a6685d5128d2af12
     :git: https://github.com/mimibuduo123/Quick.git
@@ -427,6 +429,7 @@ SPEC CHECKSUMS:
   DevKit: 676aed7d3e960aff12e9b2de5df3fe4a72e3d4e2
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
   Eureka: 7b39a479d074620d43028a0e2bfc3e0d667724df
   FirebaseABTesting: 0573c1477dd2fb8204a1d317f8968ea171c6dccc
   FirebaseAnalytics: bf11064790ac96804df1df9ddc0ae45af950d9fc
@@ -474,13 +477,12 @@ SPEC CHECKSUMS:
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   SwiftyFitsize: 5a24e56fd839c8c7c02c03f9a363b39070126354
   SwiftyImage: 65c71a147f417fc0fe137d17b135aaa666279a09
-  TestPod: 8f36741b0f9acce1784393481e70c31b94b3c80a
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 9d728036b2ffe3ae1d721ddbc5688eddc683cc78
+PODFILE CHECKSUM: a52aa1b635075d517253ea575f31e89c8527b31a
 
 COCOAPODS: 1.11.3
