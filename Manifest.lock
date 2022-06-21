@@ -6,6 +6,29 @@ PODS:
   - CompositionalLayoutDSL (0.1.0)
   - CryptoSwift (1.4.3)
   - DeviceKit (4.6.0)
+  - DevKit (0.1.0):
+    - DevKit/Full (= 0.1.0)
+  - DevKit/CommonError (0.1.0):
+    - Moya
+    - SwifterSwift
+  - DevKit/Core (0.1.0):
+    - Kingfisher
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - Then
+    - TinyConstraints
+  - DevKit/Full (0.1.0):
+    - DevKit/CommonError
+    - DevKit/Core
+    - DevKit/Networking
+  - DevKit/Networking (0.1.0):
+    - DevKit/CommonError
+    - DevKit/Core
+    - Moya
+    - RxSwift
+    - Toaster
   - Differentiator (5.0.0)
   - DZNEmptyDataSet (1.8.1)
   - Eureka (5.3.5)
@@ -158,6 +181,8 @@ PODS:
   - Localize-Swift/UIKit (3.2.0):
     - Localize-Swift/LocalizeSwiftCore
   - MJRefresh (3.7.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -249,6 +274,7 @@ PODS:
   - SwiftyFitsize (1.4.0):
     - DeviceKit
   - SwiftyImage (1.6.0)
+  - TestPod (0.1.0)
   - Then (2.7.0)
   - TinyConstraints (4.0.2)
   - Toaster (2.3.0)
@@ -263,6 +289,7 @@ DEPENDENCIES:
   - CompositionalLayoutDSL (~> 0.1.0)
   - CryptoSwift
   - DeviceKit
+  - DevKit (from `OtherPods/DevKit/`)
   - DZNEmptyDataSet
   - Eureka
   - FirebaseAnalytics
@@ -285,7 +312,7 @@ DEPENDENCIES:
   - ReusableKit
   - RxCocoa (= 6.2.0)
   - RxDataSources
-  - RxKingfisher (from `https://github.com/sephilex/RxKingfisher.git`)
+  - RxKingfisher (from `https://github.com/RxSwiftCommunity/RxKingfisher.git`)
   - RxOptional
   - RxSwift (= 6.2.0)
   - RxSwiftExt
@@ -298,6 +325,7 @@ DEPENDENCIES:
   - SwiftMessages
   - SwiftyFitsize (from `https://github.com/sephilex-dev/SwiftyFitsize.git`)
   - SwiftyImage (~> 1.1)
+  - TestPod (from `OtherPods/TestPod/`)
   - Then
   - TinyConstraints
   - Toaster
@@ -365,21 +393,25 @@ SPEC REPOS:
     - WeakMapTable
 
 EXTERNAL SOURCES:
+  DevKit:
+    :path: OtherPods/DevKit/
   Quick:
     :branch: bugfix_Xcode13.3
     :git: https://github.com/mimibuduo123/Quick.git
   RxKingfisher:
-    :git: https://github.com/sephilex/RxKingfisher.git
+    :git: https://github.com/RxSwiftCommunity/RxKingfisher.git
   SwiftyFitsize:
     :git: https://github.com/sephilex-dev/SwiftyFitsize.git
+  TestPod:
+    :path: OtherPods/TestPod/
 
 CHECKOUT OPTIONS:
   Quick:
     :commit: 1604d4c62c2684915bb516b2a6685d5128d2af12
     :git: https://github.com/mimibuduo123/Quick.git
   RxKingfisher:
-    :commit: 73855ea066c5d2239c1149a5187d395149744ba8
-    :git: https://github.com/sephilex/RxKingfisher.git
+    :commit: 3afba5ccbaf30b493529c4f686a8d6d11304e367
+    :git: https://github.com/RxSwiftCommunity/RxKingfisher.git
   SwiftyFitsize:
     :commit: 037dc961dc50dc6634d778c954d779dffc9c2248
     :git: https://github.com/sephilex-dev/SwiftyFitsize.git
@@ -392,6 +424,7 @@ SPEC CHECKSUMS:
   CompositionalLayoutDSL: d260ea8b6e35ac2d1501b41670f474cd4c2162b2
   CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
   DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
+  DevKit: 676aed7d3e960aff12e9b2de5df3fe4a72e3d4e2
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Eureka: 7b39a479d074620d43028a0e2bfc3e0d667724df
@@ -427,7 +460,7 @@ SPEC CHECKSUMS:
   ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
-  RxKingfisher: e876dadbd1087bbf2b0a22ad92577fc21798d52e
+  RxKingfisher: d5e849df4d6e3db50ca63954092238c0994ff61d
   RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
@@ -441,12 +474,13 @@ SPEC CHECKSUMS:
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   SwiftyFitsize: 5a24e56fd839c8c7c02c03f9a363b39070126354
   SwiftyImage: 65c71a147f417fc0fe137d17b135aaa666279a09
+  TestPod: 8f36741b0f9acce1784393481e70c31b94b3c80a
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 4170ff0e9aecffce96a45cb60da9e75c093233d8
+PODFILE CHECKSUM: 9d728036b2ffe3ae1d721ddbc5688eddc683cc78
 
 COCOAPODS: 1.11.3
