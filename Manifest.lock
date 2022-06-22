@@ -138,6 +138,31 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
+  - HXPHPicker (1.4.1):
+    - HXPHPicker/Full (= 1.4.1)
+  - HXPHPicker/Camera (1.4.1):
+    - HXPHPicker/Core
+  - HXPHPicker/Core (1.4.1)
+  - HXPHPicker/Editor (1.4.1):
+    - HXPHPicker/Editor/KF (= 1.4.1)
+    - HXPHPicker/Editor/Lite (= 1.4.1)
+  - HXPHPicker/Editor/KF (1.4.1):
+    - HXPHPicker/Editor/Lite
+    - Kingfisher (~> 7.0)
+  - HXPHPicker/Editor/Lite (1.4.1):
+    - HXPHPicker/Core
+  - HXPHPicker/Full (1.4.1):
+    - HXPHPicker/Camera
+    - HXPHPicker/Editor
+    - HXPHPicker/Picker
+  - HXPHPicker/Picker (1.4.1):
+    - HXPHPicker/Picker/KF (= 1.4.1)
+    - HXPHPicker/Picker/Lite (= 1.4.1)
+  - HXPHPicker/Picker/KF (1.4.1):
+    - HXPHPicker/Picker/Lite
+    - Kingfisher (~> 7.0)
+  - HXPHPicker/Picker/Lite (1.4.1):
+    - HXPHPicker/Core
   - IQKeyboardManagerSwift (6.5.9)
   - KafkaRefresh (1.5.0):
     - KafkaRefresh/Category (= 1.5.0)
@@ -301,6 +326,7 @@ DEPENDENCIES:
   - FirebaseCrashlytics
   - FirebasePerformance
   - GDPerformanceView-Swift (~> 2.1.1)
+  - HXPHPicker
   - IQKeyboardManagerSwift
   - KafkaRefresh
   - KeychainAccess
@@ -362,6 +388,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - HXPHPicker
     - IQKeyboardManagerSwift
     - KafkaRefresh
     - KeychainAccess
@@ -460,6 +487,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 8ecc717f2abe3f9ee95a5d38db08827852894acc
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  HXPHPicker: de3830309eef9a38e37d1ba1596b005f90840a9e
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   KafkaRefresh: 01645b1509b8647809f6bb666629c80855bd3fdd
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
@@ -500,6 +528,6 @@ SPEC CHECKSUMS:
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 4495d18f9d4230d1f4a86c3f13e5e4be24d0e0a6
+PODFILE CHECKSUM: 8d58e7c2f9be8827d204b9623a396b828ca3feb6
 
 COCOAPODS: 1.11.3
