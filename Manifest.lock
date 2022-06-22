@@ -4,6 +4,7 @@ PODS:
   - BonMot (6.0.0)
   - Cache (6.0.0)
   - CompositionalLayoutDSL (0.1.0)
+  - ConstraintKit (0.1.0)
   - CryptoSwift (1.4.3)
   - DeviceKit (4.6.0)
   - DevKit (0.1.0):
@@ -244,6 +245,8 @@ PODS:
   - SPAlert (4.2.0)
   - SplitRow (2.2.0):
     - Eureka (~> 5.3.3)
+  - StackKit (0.1.0):
+    - ConstraintKit
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
     - SwifterSwift/CoreAnimation (= 5.2.0)
@@ -287,6 +290,7 @@ DEPENDENCIES:
   - BonMot
   - Cache
   - CompositionalLayoutDSL (~> 0.1.0)
+  - ConstraintKit (from `https://github.com/gymshark/ios-constraint-kit.git`)
   - CryptoSwift
   - DeviceKit
   - DevKit (from `https://github.com/sephilex/DevKit.git`)
@@ -322,6 +326,7 @@ DEPENDENCIES:
   - Siren
   - SPAlert
   - SplitRow
+  - StackKit (from `https://github.com/gymshark/ios-stack-kit.git`)
   - SwifterSwift
   - SwiftMessages
   - SwiftyFitsize (from `https://github.com/sephilex-dev/SwiftyFitsize.git`)
@@ -394,6 +399,8 @@ SPEC REPOS:
     - WeakMapTable
 
 EXTERNAL SOURCES:
+  ConstraintKit:
+    :git: https://github.com/gymshark/ios-constraint-kit.git
   DevKit:
     :git: https://github.com/sephilex/DevKit.git
   Quick:
@@ -401,10 +408,15 @@ EXTERNAL SOURCES:
     :git: https://github.com/mimibuduo123/Quick.git
   RxKingfisher:
     :git: https://github.com/RxSwiftCommunity/RxKingfisher.git
+  StackKit:
+    :git: https://github.com/gymshark/ios-stack-kit.git
   SwiftyFitsize:
     :git: https://github.com/sephilex-dev/SwiftyFitsize.git
 
 CHECKOUT OPTIONS:
+  ConstraintKit:
+    :commit: 404baf28a47a5cbbb9fcb59ef8c7be605e394c4a
+    :git: https://github.com/gymshark/ios-constraint-kit.git
   DevKit:
     :commit: c48a96f3afaaab331d5db8949492475e74a3093b
     :git: https://github.com/sephilex/DevKit.git
@@ -414,6 +426,9 @@ CHECKOUT OPTIONS:
   RxKingfisher:
     :commit: 3afba5ccbaf30b493529c4f686a8d6d11304e367
     :git: https://github.com/RxSwiftCommunity/RxKingfisher.git
+  StackKit:
+    :commit: 2800f233bf6e27eee06881250e83378ec07bf345
+    :git: https://github.com/gymshark/ios-stack-kit.git
   SwiftyFitsize:
     :commit: 037dc961dc50dc6634d778c954d779dffc9c2248
     :git: https://github.com/sephilex-dev/SwiftyFitsize.git
@@ -424,6 +439,7 @@ SPEC CHECKSUMS:
   BonMot: fb2b6a2209cb3149aca37b7131d49c051c04ae86
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   CompositionalLayoutDSL: d260ea8b6e35ac2d1501b41670f474cd4c2162b2
+  ConstraintKit: 5c784eb4c8c0639f09ac5d298860825fe1048bf0
   CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
   DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
   DevKit: 676aed7d3e960aff12e9b2de5df3fe4a72e3d4e2
@@ -473,6 +489,7 @@ SPEC CHECKSUMS:
   Siren: de768099aff1f1c9acda4247064788a4940b4bf3
   SPAlert: 735da1f16a887e294719217572ce1f936d8c8782
   SplitRow: 1911d2bd0f34e6ac93d83cc741730505a91c4d04
+  StackKit: 7b2c05841e8e5adb244aacb958c4f7cdbfe6dccf
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   SwiftyFitsize: 5a24e56fd839c8c7c02c03f9a363b39070126354
@@ -483,6 +500,6 @@ SPEC CHECKSUMS:
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: a52aa1b635075d517253ea575f31e89c8527b31a
+PODFILE CHECKSUM: 4495d18f9d4230d1f4a86c3f13e5e4be24d0e0a6
 
 COCOAPODS: 1.11.3
